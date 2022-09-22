@@ -1,0 +1,70 @@
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
+    #navbar {
+        position: sticky;
+        left: 0;
+        top: 10%;
+        width: 15%;
+        height: 100%;
+    }
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #1e293b;
+    color: #b8bfc6;
+}
+
+#navbar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 15%;
+    height: 100%;
+    background-color: #ffffff;
+    color: #1e293b;
+}
+
+#navbar>header {
+    text-align: center;
+}
+
+a {
+    position: relative;
+    display: block;
+    margin-top: 20px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    border-bottom: 2px solid #1e293b;
+    font-size: 1.17em;
+}
+
+a:link,
+a:visited {
+    text-decoration: none;
+    color: #7e81ff;
+}
+
+#main-doc {
+    position: absolute;
+    margin-left: 15%;
+    padding: 20px;
+}
+
+header {
+    font-weight: 700;
+    font-size: 2rem;
+    color: #7e81ff;
+}
+
+h3 {
+    font-weight: 700;
+    font-size: 1.17rem;
+    color: #ffffff;
+}
+
+p {
+    font-weight: 400;
+    font-size: 1rem;
+    color: #b8bfc6;
+}
+
