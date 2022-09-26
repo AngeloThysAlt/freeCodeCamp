@@ -1,0 +1,154 @@
+:root {
+    --bluegreen: #77CBB9;
+    --darkblue: #252634;
+    --darkgrey: #555768;
+    --greyblue: #a7a8be;
+    --white: #FFFFFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: var(--white);
+}
+
+#navbar {
+    position: fixed;
+    top: 0;
+    background-color: var(--bluegreen);
+    width: 100vw;
+    height: 6vh;
+    box-shadow: 0 0 1rem var(--bluegreen);
+    border: 1px solid var(--greyblue);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#navbar>a {
+    text-decoration: none;
+    color: var(--darkblue);
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+#navbar>a:hover {
+    transition: 1s ease-in-out;
+    text-decoration: underline wavy var(--white);
+}
+
+#navbar>a:active {
+    transition: 0s;
+    color: var(--white);
+    text-shadow: 0 0 5px var(--white);
+}
+
+main {
+    background-color: var(--darkblue);
+}
+
+#welcome-section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#welcome-section>h1 {
+    font-size: 6rem;
+}
+
+#welcome-section>h1>span {
+    color: var(--bluegreen);
+}
+
+#welcome-section>p {
+    font-size: 4rem;
+    font-style: italic;
+}
+
+#welcome-section>p>span {
+    animation: glow 2s ease-in-out infinite;
+}
+
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 2px var(--bluegreen);
+    }
+    50% {
+        text-shadow: 0 0 6px var(--bluegreen);
+    }
+    100% {
+        text-shadow: 0 0 2px var(--bluegreen);
+    }
+}
+
+#projects {
+    background-color: var(--greyblue);
+    height: 100vh;
+    padding: 10rem;
+    text-align: center;
+}
+
+#projects>h1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 4rem;
+}
+
+#projects>h1>span {
+    text-decoration: underline wavy var(--bluegreen);
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 80vw;
+    height: 60vh;
+}
+
+.project-tile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#projects>button {
+    
+}
+
+#socials {
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer {
+    height: 5vh;
+}
+
+/* @media {
+    
+} */
